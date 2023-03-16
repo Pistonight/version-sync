@@ -1,0 +1,19 @@
+# version: 0.1.0 <- This is synced with README.md
+
+# Put module name in double brackets, as in: [[my-module]]
+# Can have multiple modules
+[[version-sync]]
+file = "README.md" # File that contains the version string
+line = 2 # Line number that contains the version string (first line is 1)
+char = 10 # Character number that contains the version string (first character is 0)
+end = "`" # End character of the version string. If empty, the rest of the line is used
+
+# Add more versions of the same module, using the same module name
+[[version-sync]]
+file = "example.toml"
+line = 1
+char = 11
+end = " "
+
+
+# You can add more modules...
