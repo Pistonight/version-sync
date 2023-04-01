@@ -136,6 +136,8 @@ def get_highest_version(versions: dict):
                     highest_version = v_arr
                     highest_str = v
                     break
+                elif v_arr[i] < highest_version[i]:
+                    break
     return highest_str
 
 
